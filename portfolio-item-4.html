@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>dannydev - money$hot</title>
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+      integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+      integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Source+Code+Pro:400,900|Source+Sans+Pro:300,900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="//cdn.jsdelivr.net/npm/devicons@1.8.0/css/devicons.min.css"
+      rel="stylesheet"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.13.0/devicon.min.css"
+    />
+
+    <link rel="stylesheet" href="app.css" />
+  </head>
+  <body>
+    <header>
+      <div class="logo">
+        <a href="/index.html"><h3>&ltdannydev&gt</h3></a>
+      </div>
+      <button class="nav-toggle" aria-label="toggle navigation">
+        <span class="hamburger"></span>
+      </button>
+      <nav class="nav">
+        <ul class="nav__list">
+          <li class="nav__item"><a href="#home" class="nav__link">Home</a></li>
+          <li class="nav__item">
+            <a href="#services" class="nav__link">My Services</a>
+          </li>
+          <li class="nav__item">
+            <a href="#about" class="nav__link">About me</a>
+          </li>
+          <li class="nav__item">
+            <a href="#work" class="nav__link">My work</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <!-- Introduction -->
+    <section class="intro">
+      <h1 class="section__title section__title--intro">
+        PartyFundMe <strong>Crowdfund a party</strong>
+      </h1>
+      <p class="section__subtitle section__subtitle--intro">
+        Crowdfund - Event / Tickets Sales site
+      </p>
+
+      <img
+        class="intro__img"
+        src="assets/img/project3Partyfund.png"
+        alt="portfolio project photo"
+      />
+    </section>
+
+    <div class="portfolio-item-container">
+      <div class="portfolio-item-container-item1">
+        <h2>Stack</h2>
+        <div>
+          <span class="devicons devicons-python"></span>
+          <span class="devicons devicon-flask-original"></span>
+          <span class="devicons devicons-postgresql"></span>
+          <span class="devicons devicon-sqlalchemy-plain"></span>
+          <span
+            ><img
+              id="stripe-icon"
+              src="https://img.icons8.com/ios-filled/50/000000/stripe.png"
+          /></span>
+        </div>
+
+        <span
+          ><a href="https://github.com/dannywmarks/CP1-PARTYFUNDME"
+            >CODE</a
+          ></span
+        >
+        <span><a href="https://partyfund.herokuapp.com/">DEMO</a></span>
+
+        <div class="portfolio-project4-sidecontainer">
+          <hr />
+          <p>
+            <strong>Summary:</strong> PartyfundMe harnesses inspiration from my
+            past mobile app, MoneyShot. MoneyShot threw birthday parties at
+            local bars in the bay area to generate awareness of the app. The
+            guest of honor was promoted on a flyer, asking guests to attend. If
+            a guest could not participate in the event, the option to send the
+            birthday boy/girl a drink in their absence was made available. In
+            addition, the guest of honor's network used their social media to
+            promote the event. A side effect was the birthday boy/girl received
+            more drinks than they could drink that night. The guest of honor
+            used the excess credits to create an open bar for all guests
+            attending. MoneyShot went on to throw multiple events that users
+            crowdfunded.
+          </p>
+          <p>
+            PartyFundMe was my attempt at recreating this concept at the
+            beginning of my coding journey. I experimented using Python, Flask,
+            PostgreSQL, SQLAlchemy, and the Stripe API, which I was familiar
+            with because of MoneyShot.
+          </p>
+          <p>
+            The Flask framework allowed for an out-of-the-box web server setup
+            abstracting many low-level details that helped speed up web
+            application development. The Jinja template engine allowed for easy
+            implementation of HTML and Python code and logic within my template
+            pages.
+          </p>
+
+          <hr />
+          <p>
+            <strong>Flask-Blueprints: </strong> helped create reusable instances
+            of the application. It also provided organization in the form of
+            projects in modules.
+          </p>
+
+          <p>
+            <strong>Flask-Admin: </strong> Was used to create a GUI Admin panel
+            for a more effortless user experience for admins to have CRUD
+            capabilities with the events, bars, and users.
+          </p>
+
+          <p>
+            <strong>Flask-login: </strong> provided user session management for
+            Flask. It handles the everyday tasks of logging in, logging out, and
+            remembering your users' sessions over extended periods.
+          </p>
+
+          <p>
+            <strong>Flask-Bcrypt: </strong> a Flask extension that provides
+            bcrypt hashing utilities for the application. Users' passwords were
+            encrypted using Bcrypt, and a hash was stored on the back end,
+            ensuring sensitive data is kept safe.
+          </p>
+
+          <p>
+            <strong>PostgreSQL: </strong> was chosen for this project because of
+            its popularity as the primary data store or data warehouse for many
+            web, mobile, geospatial, and analytics applications. PartyFundMe
+            used a basic schema to create relationships and store the back-end
+            users, user profile data, event data, and bars.
+          </p>
+
+          <p>
+            <strong>Stripe-API: </strong> was used so users could buy tickets
+            for events online with a credit card. For example, a user would
+            purchase an event and then receive confirmation through Flask-Mail.
+            After verification, the total money raised reflects the event's
+            purchase, and the user profile picture of who bought the event shows
+            up in the RSVP section.
+          </p>
+          <p>
+            <strong>What I learned: </strong> Taking on this concept was my
+            first solo attempt at developing a full-stack project. It was
+            overwhelming at times due to wanting to add so much functionality
+            out of the gate. The project became a playground to test my
+            knowledge learned through the Springboard Software Engineering
+            Bootcamp.
+          </p>
+          <p>
+            I enjoyed the user authentication/authorization on both the
+            front-end and back-end sides. I had more fun setting up the back-end
+            routes and the database compared to the front-end design. I was
+            happy with the implementation of Flask-Blueprints. By taking on the
+            project from a modular approach, I feel it will be much easier when
+            I come back to the project and want to add or remove functionality.
+          </p>
+        </div>
+      </div>
+
+      <div class="portfolio4-item-container-item2">
+        <img src="assets/img/partyfund_ticket.png" alt="shot glass logo" />
+
+        <img src="assets/img/partyfundme4.png" alt="shot glass logo" />
+
+        <img src="assets/img/partyfundme2.png" alt="shot glass logo" />
+
+        <img src="assets/img/partyfundme5.png" alt="shot glass logo" />
+        <img src="assets/img/partyfundme3.png" alt="shot glass logo" />
+      </div>
+      <!-- <hr> -->
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <a href="mail:dannywmarks@gmail.com" class="footer__link"
+        >dannywmarks@gmail.com</a
+      >
+      <ul class="social-list">
+        <li class="social-list__item">
+          <a href="www.twitter.com/dannydamageajj" class="social_list__link">
+            <i class="fab fa-twitter"></i>
+          </a>
+        </li>
+        <li class="social-list__item">
+          <a href="www.youtube.com/" class="social_list__link">
+            <i class="fab fa-youtube"></i>
+          </a>
+        </li>
+        <li class="social-list__item">
+          <a href="www.linkedin.com/n/dannywmarks" class="social_list__link">
+            <i class="fab fa-linkedin"></i>
+          </a>
+        </li>
+        <li class="social-list__item">
+          <a href="www.github.com/dannywmarks" class="social_list__link">
+            <i class="fab fa-github"></i>
+          </a>
+        </li>
+      </ul>
+    </footer>
+
+    <script src="index.js"></script>
+  </body>
+</html>

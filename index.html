@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>dannydev</title>
-  
+
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
@@ -20,30 +20,39 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Code+Pro:400,900|Source+Sans+Pro:300,900&display=swap" rel='stylesheet'>
-    
-    <link rel="stylesheet" href="app.css" />
+    <link href='//cdn.jsdelivr.net/npm/devicons@1.8.0/css/devicons.min.css' rel='stylesheet'>`
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Source+Code+Pro:400,900|Source+Sans+Pro:300,900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/fork-awesome@1.2.0/css/fork-awesome.min.css" integrity="sha256-XoaMnoYC5TH6/+ihMEnospgm0J1PM/nioxbOUdnM8HY=" crossorigin="anonymous">
 
+
+    <link rel="stylesheet" href="app.css" />
   </head>
   <body>
     <header>
       <div class="logo">
-        <img src="" alt="devdanny" />
+        <!-- <img src="" alt="devdanny" /> -->
+        <a href="/index.html"><h3>&ltdannydev&gt</h3></a>
       </div>
       <button class="nav-toggle" aria-label="toggle navigation">
         <span class="hamburger"></span>
       </button>
       <nav class="nav">
         <ul class="nav__list">
-          <li class="nav__item"><a href="#home" class="nav__link">Home</a></li>
           <li class="nav__item">
-            <a href="#services" class="nav__link">My Services</a>
+            <a href="index.html" class="nav__link">Home</a>
           </li>
           <li class="nav__item">
-            <a href="#about" class="nav__link">About me</a>
+            <a href="index.html#services" class="nav__link">My Services</a>
           </li>
           <li class="nav__item">
-            <a href="#work" class="nav__link">My work</a>
+            <a href="index.html#about" class="nav__link">About me</a>
+          </li>
+          <li class="nav__item">
+            <a href="index.html#work" class="nav__link">My work</a>
           </li>
         </ul>
       </nav>
@@ -52,10 +61,13 @@
     <!-- Introduction -->
     <section class="intro" id="home">
       <h1 class="section__title section__title--intro">
-        Hi, I am <strong>Danny Marks</strong>
+        Hello World, I am <strong>Danny Marks</strong>
       </h1>
-      <p class="section__subtitle section_subtitle--intro">fullstack-dev</p>
+      <p class="section__subtitle section__subtitle--intro">
+        FULL-STACK ENGINEER
+      </p>
       <img
+        class="intro__img"
         src="assets/img/dannydev.jpeg"
         alt="a headshot picture of dannydev"
       />
@@ -67,108 +79,189 @@
       <div class="services">
         <div class="service">
           <h3>Frontend</h3>
-          <p>HTML5, CSS3, Javascript, REACT</p>
+        
+       
+            
+          <p>
+            Worked on multiple projects using HTML5, CSS3, Javascript, and the REACT library.
+            I also have practical experience in UI/UX Design REACT libraryREACT libraryREACT library
+          </p> 
+          </p>
+
+          <div class="devicon-container">
+           
+              <span class="devicons devicons-html5"></span>
+              <span class="devicons devicons-css3"></span>
+              <span class="devicons devicons-javascript"></span>
+              <span class="devicons devicons-react"></span>
+          </div>
         </div>
         <!--service-->
         <div class="service">
           <h3>Backend</h3>
-          <p></p>
+
+          <p>
+            Project experience with MongoDB, PostgreSQL, NodeJS, Python, REST API, and have experience with JEST testing and Chai/Mocha assertion libraries REACT libraryREACT libraryREACT library
+          </p>
+          </p>
+
+          <div class="devicon-container">
+            <span class="devicons devicons-python">     
+            <span class="devicons devicons-database"></span>
+            <span class="devicons devicons-nodejs"></span>
+            <span class="devicons devicons-postgresql"></span>
+          </div>
+         
         </div>
         <!--service-->
         <div class="service">
           <h3>Blockchain</h3>
-          <p></p>
+        
+          <p>
+          Experience with Web3.js Truffle Framework, Ganache, Hardhat, Solidity Experience with Web3.js. I also have worked on projects using a Test Driven Development approach.
+          </p>
+          <div class="devicon-container">
+            <i class="devicons fa fa-ethereum" aria-hidden="true"></i>
+            <!-- <i class="devicons fa fa-blockstack"></i> -->
+            <!-- <i class="devicons fa fa-btc" aria-hidden="true"></i> -->
+
+          </div>
         </div>
         <!--service-->
       </div>
       <!--services-->
 
-      <a href="#work" class="btn"></a>
+      <a href="#work" class="btn">My work</a>
     </section>
 
     <!-- About Me -->
     <section class="about-me" id="about">
       <h2 class="section__title section__title--about">Who I am</h2>
-      <p class="section__subtitle section__subtitle--about"></p>
+      <p class="section__subtitle section__subtitle--about">
+        Martial Engineer, Software Artist, Blockchain Enthusiast, and Javascript
+        Aficionado.
+      </p>
       <div class="about-me__body">
-        <p></p>
-        <p></p>
+        <p>
+          I am a lifelong martial artist with an unquenchable thirst for
+          knowledge and a passion for technology. Since my childhood, I have
+          always had an interest in the details of how things work.
+        </p>
+        <p>
+          After retiring from fighting professionally, I began teaching the
+          martial arts while pursuing my interests in the tech industry. In 2014
+          I followed an idea for a startup that came from working as a bartender
+          when I was younger. I bootstrapped my first startup company
+          "MoneyShot" and was heavily involved in the mobile app's design
+          process. MoneyShot allowed users to buy each other drinks at local bay
+          area bars. Unfortunately, due to lack of funding, I was not able to
+          continue development in the project.
+        </p>
+        <p>
+          Frustrated that MoneyShot development ended due to lack of funds, I
+          took a more profound interest in the app development process and began
+          learning to program. I began studying online but looked for a more
+          straightforward path and joined the Springboard Software Engineering
+          Bootcamp.
+        </p>
+        <p>
+          Through Springboard, I developed a deeper appreciation for computer
+          science and engineering while learning cutting-edge technologies. As a
+          result, I have taken a strong interest in cryptocurrency and
+          blockchain development.
+        </p>
+        <p>
+          I am currently looking to join an engineering team to help further my
+          development as a Software Engineer.
+        </p>
       </div>
       <img
+        class="about-me__img"
         src="assets/img/dannydev_king.jpeg"
         alt="danny as tiger king william as cub"
       />
     </section>
 
     <!-- My Work -->
-    <section class="my-work">
+    <section class="my-work" id="work">
       <h2 class="section__title">My work</h2>
-      <p class="section__subtitle"></p>
+      <p class="section__subtitle section__subtitle--work">
+        Current and Past Projects
+      </p>
 
       <!-- portfolio item #01 -->
       <div class="portfolio">
-        <a href="" class="portfolio__item">
+        <!-- Portfolio item #1 -->
+        <a href="/portfolio-item-1.html" class="portfolio__item">
           <img src="" alt="portfolio-1" class="portfolio__img" />
         </a>
-      </div>
-
-      <!-- portfolio item #02 -->
-      <div class="portfolio">
-        <a href="" class="portfolio__item">
+        <!-- Portfolio item #2 -->
+        <a href="/portfolio-item-2.html" class="portfolio__item">
           <img src="" alt="portfolio-2" class="portfolio__img" />
         </a>
-      </div>
-
-      <!-- portfolio item #03 -->
-      <div class="portfolio">
-        <a href="" class="portfolio__item">
-          <img src="" alt="portfolio-3" class="portfolio__img" />
+        <!-- Portfolio item #3 -->
+        <a href="/portfolio-item-3.html" class="portfolio__item">
+          <img
+            src="assets/img/msblockchain3.png"
+            alt="portfolio-2"
+            class="portfolio__img"
+          />
         </a>
-      </div>
-
-      <!-- portfolio item #04 -->
-      <div class="portfolio">
-        <a href="" class="portfolio__item">
-          <img src="" alt="portfolio-4" class="portfolio__img" />
+        <!-- Portfolio item #4 -->
+        <a href="/portfolio-item-4.html" class="portfolio__item">
+          <img
+            src="assets/img/project3Partyfund.png"
+            alt="portfolio-2"
+            class="portfolio__img"
+          />
         </a>
-      </div>
-
-      <!-- portfolio item #05 -->
-      <div class="portfolio">
-        <a href="" class="portfolio__item">
-          <img src="" alt="portfolio-5" class="portfolio__img" />
+        <!-- Portfolio item #5 -->
+        <a href="/portfolio-item-5.html" class="portfolio__item">
+          <img
+            src="assets/img/project4Mshot.png"
+            alt="portfolio-2"
+            class="portfolio__img"
+          />
         </a>
-      </div>
-
-      <!-- portfolio item #06 -->
-      <div class="portfolio">
-        <a href="" class="portfolio__item">
-          <img src="" alt="portfolio-6" class="portfolio__img" />
+        <!-- Portfolio item #6 -->
+        <a href="/portfolio-item-6.html" class="portfolio__item">
+          <img
+            src="assets/img/project2MshotExchange-1.png"
+            alt="portfolio-2"
+            class="portfolio__img"
+          />
         </a>
       </div>
     </section>
 
     <!-- Footer -->
-    <footer>
+    <footer class="footer">
       <a href="mail:dannywmarks@gmail.com" class="footer__link"
         >dannywmarks@gmail.com</a
       >
       <ul class="social-list">
         <li class="social-list__item">
-          <a href="www.twitter.com" class="sociali_list__link"></a>
+          <a href="www.twitter.com/dannydamageajj" class="social_list__link">
+            <i class="fab fa-twitter"></i>
+          </a>
         </li>
         <li class="social-list__item">
-          <a href="www.youtube.com" class="sociali_list__link"></a>
+          <a href="http://www.youtube.com/" class="social_list__link">
+            <i class="fab fa-youtube"></i>
+          </a>
         </li>
         <li class="social-list__item">
-          <a href="www.linkedin.com" class="sociali_list__link"></a>
+          <a href="https://www.linkedin.com/n/dannywmarks" class="social_list__link">
+            <i class="fab fa-linkedin"></i>
+          </a>
         </li>
         <li class="social-list__item">
-          <a href="www.instagram.com" class="sociali_list__link"></a>
+          <a href="https://www.github.com/dannywmarks" class="social_list__link">
+            <i class="fab fa-github"></i>
+          </a>
         </li>
       </ul>
     </footer>
-
     <script src="index.js"></script>
   </body>
 </html>
